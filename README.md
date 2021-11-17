@@ -1,4 +1,4 @@
-# Accessibility Myths Debunked
+# Accessibility Myths
 
 - Accessibility only affects a small group of users
 - Accessible websites are ugly and boring
@@ -18,5 +18,8 @@
 - People with disabilities don't use computers
 - We don't need to be compliant
 - Digital accessibility is a one-time-only task
+- Accessibility is like a feature should be implemented and then you have it
 - Accessibility can be fixed by providing a text version of a website for blind people
 - Blind people don't watch movies
+- Accessibility can only be dested by disabled people
+- We can quickly add accessibility before the release
