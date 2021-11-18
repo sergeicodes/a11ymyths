@@ -23,3 +23,4 @@
 - Blind people don't watch movies
 - Accessibility can only be dested by disabled people
 - We can quickly add accessibility before the release
+- Accessibility can be achieved by adding ARIA attributes
