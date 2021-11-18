@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+:root {
+  --color-background: #1e1e1e;
+  --color-text: #cccccc;
+  --color-text-dimmed: #858585;
+  --color-accent: #f14c4c;
+  --color-link: #29b8db;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: center;
+
+  counter-reset: myth;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    margin-top: 10rem;
+    font-size: 4rem;
+  }
+}
+
+.stamp {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 3px solid;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  transform: rotate(-16deg);
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 0 1rem;
+}
+
+a,
+a:visited {
+  color: var(--color-link);
+  padding: 0.2rem 0.6rem;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-background);
+  background-color: var(--color-link);
+  text-decoration: none;
+  outline: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.myth {
+  margin: 8rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .myth {
+    margin: 12rem 0;
+  }
+}
+
+.myth__title {
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .myth__title {
+    font-size: 2.5rem;
+  }
+}
+
+.myth__title::before {
+  counter-increment: myth;
+  content: "Myth #" counter(myth) "";
+  position: absolute;
+  top: -3rem;
+  font-size: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-text-dimmed);
+}
+
+.myth__excerpt {
+  font-weight: 300;
+}
+
+footer {
+  padding: 2rem 0;
+  font-size: 0.8rem;
+}
+
+footer a,
+footer a:visited {
+  padding: 0 0.1rem;
+}
