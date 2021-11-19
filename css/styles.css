@@ -22,11 +22,13 @@ h1 {
   font-weight: 300;
   font-size: 3rem;
   margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 600px) {
   h1 {
     margin-top: 10rem;
+    margin-bottom: 4rem;
     font-size: 4rem;
   }
 }
@@ -90,13 +92,19 @@ strong {
   counter-increment: myth;
   content: "Myth #" counter(myth) "";
   position: absolute;
-  top: -3rem;
+  top: -2.8rem;
   font-size: 1.3rem;
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
   font-weight: 300;
   color: var(--color-text-dimmed);
+}
+
+@media only screen and (min-width: 600px) {
+  .myth__title::before {
+    top: -3rem;
+  }
 }
 
 .myth__excerpt {
