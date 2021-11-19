@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
   --color-background: #1e1e1e;
@@ -33,6 +33,20 @@ h1 {
   }
 }
 
+a,
+a:visited {
+  padding: 0 0.1rem;
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-background);
+  background-color: var(--color-link);
+  text-decoration: none;
+  outline: none;
+}
+
 .stamp {
   text-transform: uppercase;
   color: var(--color-accent);
@@ -44,22 +58,13 @@ h1 {
 
 .content {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 640px;
   padding: 0 1rem;
 }
 
-a,
-a:visited {
-  color: var(--color-link);
+.myth__link,
+.myth__link:visited {
   padding: 0.2rem 0.6rem;
-}
-
-a:hover,
-a:focus {
-  color: var(--color-background);
-  background-color: var(--color-link);
-  text-decoration: none;
-  outline: none;
 }
 
 strong {
@@ -116,7 +121,12 @@ footer {
   font-size: 0.8rem;
 }
 
-footer a,
-footer a:visited {
-  padding: 0 0.1rem;
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
