@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
 
 :root {
   --color-background: #1e1e1e;
@@ -10,6 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
   line-height: 1.6;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -27,7 +28,7 @@ h1 {
 
 @media only screen and (min-width: 600px) {
   h1 {
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom: 4rem;
     font-size: 4rem;
   }
@@ -47,6 +48,10 @@ a:focus {
   outline: none;
 }
 
+strong {
+  font-weight: 600;
+}
+
 .stamp {
   text-transform: uppercase;
   color: var(--color-accent);
@@ -60,15 +65,6 @@ a:focus {
   margin: 0 auto;
   max-width: 640px;
   padding: 0 1rem;
-}
-
-.myth__link,
-.myth__link:visited {
-  padding: 0.2rem 0.6rem;
-}
-
-strong {
-  font-weight: 600;
 }
 
 .myth {
@@ -110,10 +106,6 @@ strong {
   .myth__title::before {
     top: -3rem;
   }
-}
-
-.myth__excerpt {
-  font-weight: 300;
 }
 
 footer {
