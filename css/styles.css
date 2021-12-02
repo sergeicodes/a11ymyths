@@ -105,6 +105,10 @@ strong {
   color: var(--color-text-dimmed);
 }
 
+:lang(es) .myth__title::before {
+  content: "Mito #" counter(myth) "";
+}
+
 @media only screen and (min-width: 600px) {
   .myth__title::before {
     top: -3rem;
