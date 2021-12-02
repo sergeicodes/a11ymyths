@@ -35,14 +35,35 @@
     />
     <meta
       name="twitter:image"
-      content="https://a11ymyths.com/images/og-image.png"
+      content="https://a11ymyths.com/images/og-image-es.png"
     />
     <meta name="twitter:image:alt" content="Mitos de Accesibilidad desmentidos" />
+    <style>
+      :lang(es) .myth__title::before {
+        content: "Mito #" counter(myth) "";
+      }
+    </style>
   </head>
   <body>
     <main>
       <div class="content">
-        <h1>Mitos de a11y</h1>
+        <div class="content">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="./../index.html">
+                <img class="nav__image" src="./../images/flag-gb.png" alt="English" />
+              </a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="./index.html">
+                <img class="nav__image" src="./../images/flag-es.png" alt="Spanish" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1>mitos de a11y</h1>
         <p class="stamp">Desmentidos</p>
 
         <section class="myth">
@@ -463,7 +484,17 @@
           >. Seguime
           <a target="_blank" href="https://twitter.com/_sergeikriger"
             >@_sergeikriger</a
+          >. Translated by
+          <a target="_blank" href="https://twitter.com/pazguille"
+            >@pazguille</a
           >.
+        </p>
+        <p>
+          Icons made by
+          <a target="_blank" href="https://www.freepik.com">Freepik</a> from
+          <a target="_blank" href="https://www.flaticon.com/"
+            >www.flaticon.com</a
+          >
         </p>
       </div>
     </footer>

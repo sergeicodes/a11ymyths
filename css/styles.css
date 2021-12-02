@@ -105,10 +105,6 @@ strong {
   color: var(--color-text-dimmed);
 }
 
-:lang(es) .myth__title::before {
-  content: "Mito #" counter(myth) "";
-}
-
 @media only screen and (min-width: 600px) {
   .myth__title::before {
     top: -3rem;
@@ -128,4 +124,33 @@ footer {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.nav__list-item {
+  display: flex;
+}
+
+.nav__list-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.nav__link:visited {
+  opacity: 0.8;
+  background: none;
+}
+
+.nav__image {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
