@@ -8,6 +8,10 @@
   --color-link: #29b8db;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -15,6 +19,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   text-align: center;
+  margin: 0;
 
   counter-reset: myth;
 }
