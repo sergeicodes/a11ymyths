@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,6 +7,9 @@
     <title>Accessibility Myths</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 
     <meta
       name="description"
@@ -38,6 +41,11 @@
       content="https://a11ymyths.com/images/og-image.png"
     />
     <meta name="twitter:image:alt" content="Accessibility Myths Debunked" />
+    <style>
+      :lang(he) .myth__title::before {
+        content: "מיתוס #" counter(myth) "";
+      }
+    </style>
   </head>
   <body>
     <main>
