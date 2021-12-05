@@ -12,14 +12,6 @@
   box-sizing: border-box;
 }
 
-*:lang('he') {
-  direction: rtl;
-}
-
-nav .nav__list:lang('he') {
-  direction: ltr !important;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -30,10 +22,6 @@ body {
   margin: 0;
 
   counter-reset: myth;
-}
-
-body:lang('he') {
-  font-family: 'Open Sans Hebrew', sans-serif;
 }
 
 h1 {
@@ -131,14 +119,6 @@ strong {
 footer {
   padding: 2rem 0;
   font-size: 0.8rem;
-}
-
-footer ul:lang('he') {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
 }
 
 .visually-hidden {
