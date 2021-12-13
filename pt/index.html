@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mitos de Acessibilidade</title>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+		<meta
+			name="description"
+			content="Um pequeno projeto desmascarando mitos comuns de acessibilidade."
+		/>
+		<meta name="image" content="https://a11ymyths.com/" />
+
+		<meta property="og:title" content="Mitos de Acessibilidade" />
+		<meta
+			property="og:description"
+			content="Um pequeno projeto desmascarando mitos comuns de acessibilidade."
+		/>
+		<meta property="og:image" content="https://a11ymyths.com/images/og-image.png" />
+		<meta property="og:image:alt" content="Mitos de Acessibilidade Desmascarados" />
+		<meta property="og:url" content="https://a11ymyths.com/" />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:creator" content="@_sergeikriger" />
+		<meta name="twitter:title" content="Mitos de Acessibilidade" />
+		<meta
+			name="twitter:description"
+			content="Um pequeno projeto desmascarando mitos comuns de acessibilidade."
+		/>
+		<meta name="twitter:image" content="https://a11ymyths.com/images/og-image.png" />
+		<meta name="twitter:image:alt" content="Mitos de Acessibilidade Desmascarados" />
+	</head>
+	<body>
+		<main>
+			<div class="content">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__list-item">
+							<a class="nav__link" lang="en" href="./">English</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__link" lang="he" href="./il/">עברית</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__link" lang="ja" href="./jp/">日本語</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__link" lang="ru" href="./ru/">Русский</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__link" lang="es" href="./es/">Español</a>
+						</li>
+						<li class="nav__list-item">
+							<a class="nav__link" lang="pt" href="./pt/">Português</a>
+						</li>
+					</ul>
+				</nav>
+
+				<h1>Mitos de a11y</h1>
+				<p class="stamp">Desmascarados</p>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade apenas afeta um pequeno grupo de utilizadores
+					</h2>
+
+					<p>
+						Não é assim tão pequeno. Cerca de <strong>15%</strong> da população mundial,
+						ou cerca de <strong>mil milhões</strong> de pessoas, vivem com deficiências,
+						que são a maior minoria do mundo. O número de pessoas com deficiência está a
+						aumentar dramaticamente.
+					</p>
+
+					<a
+						href="https://www.who.int/en/news-room/fact-sheets/detail/disability-and-health"
+						target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre A acessibilidade apenas afeta um pequeno grupo de
+							utilizadores</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">Utilizadores com deficiência não usam o meu site</h2>
+
+					<p class="myth__description">
+						Como pode ter tanta certeza? Muitas pessoas com deficiências, como
+						daltonismo, habilidades motoras limitadas, etc. usam sites da mesma forma
+						que outros utilizadores. Além disso, muitas
+						<strong>tecnologias assistivas não são detetáveis</strong> de forma alguma.
+					</p>
+
+					<a href="https://www.w3.org/WAI/people-use-web/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre Utilizadores com deficiência não usam o meu site</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Fazer um site acessível é caro e demorado Making a website accessible is
+						costly and time-consuming
+					</h2>
+
+					<p>
+						Pode não ser o caso se a acessibilidade for considerada desde o início do
+						projeto e a equipa de desenvolvimento possuir as habilidades adequadas.
+						Quando a acessibilidade se torna um hábito, o
+						<strong>tempo de desenvolvimento não muda</strong> ou muda pouco.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Podemos adicionar acessibilidade rapidamente antes do lançamento
+					</h2>
+
+					<p>
+						Não vai funcionar. Talvez coisas fáceis, como texto alternativo ou rotulagem
+						de formulário, possam ser adicionadas no final, mas alguns
+						<strong>UX complexos devem ser planeados para serem acessíveis</strong>. Em
+						alguns casos, tornar os recursos acessíveis no final do processo de
+						desenvolvimento pode exigir a reestruturação completa.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Acessibilidade significa apenas adicionar texto alternativo às imagens
+					</h2>
+
+					<p>
+						De facto, a falta de texto alternativo nas imagens é
+						<a target="_blank" href="https://webaim.org/projects/million/"
+							>um dos maiores problemas de acessibilidade</a
+						>. Mas, além disso, há muitas coisas a serem consideradas ao tornar um site
+						acessível - <strong>estrutura do título</strong>,
+						<strong> controlos funcionais</strong>,
+						<strong>contraste de cores </strong> e muito mais.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade na web é apenas um trabalho do desenvolvedor
+					</h2>
+					<p>
+						É um esforço de equipa. Os <strong>designers</strong> criam interfaces de
+						utilizador (UIs) acessíveis, os <strong>desenvolvedores </strong> criam-nas,
+						os <strong>engenheiros de controlo de qualidade (QA) </strong> fazem os
+						testes de acessibilidade, os
+						<strong>gestores de projeto (PMs)</strong> certificam-se de que a
+						acessibilidade está incluída nos processos da equipa, a
+						<strong>equipa jurídica</strong> verifica se um produto está livre de riscos
+						do ponto de vista da acessibilidade, os
+						<strong>gestores de conteúdo</strong> ajustam o conteúdo para estar em
+						conformidade.
+					</p>
+
+					<a href="https://accessibility.digital.gov/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre A acessibilidade na web é apenas um trabalho do
+							desenvolvedor</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade só ajuda pessoas com deficiência</h2>
+
+					<p>
+						Felizmente, <strong>ajuda a todos</strong>. É sabido que a aplicação dos
+						princípios de acessibilidade melhora a experiência geral do utilizador e
+						torna o uso de um site mais conveniente.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Tornar sites acessíveis não traz nenhum benefício adicional
+					</h2>
+
+					<p>
+						Para listar apenas alguns deles - mais utilizadores, mais receita, melhor
+						reputação, menos riscos de serem processados, melhor competência das equipas
+						de desenvolvimento e muito mais. No final das contas, fazer
+						<strong>uma coisa boa</strong> nem sempre exige um motivo lucrativo.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade pode ser corrigida pelo verificador automático ou
+						sobreposição
+					</h2>
+
+					<p>
+						Absolutamente não. Há uma
+						<a target="_blank" href="https://overlayfactsheet.com/">iniciativa</a>
+						assinada por centenas de profissionais que defende a remoção da sobreposição
+						de acessibilidade na web.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Usar ferramentas automatizadas é tudo o que preciso fazer para tornar o meu
+						site acessível
+					</h2>
+
+					<p>
+						Isso seria fácil, mas não. Normalmente, o teste de acessibilidade
+						automatizado só consegue encontrar
+						<a
+							target="_blank"
+							href="https://marcysutton.com/evinced-automated-accessibility-testing"
+							>30-50% de todos os problemas de acessibilidade</a
+						>. Na verdade, alguns sites
+						<a
+							target="_blank"
+							href="https://www.matuzo.at/blog/building-the-most-inaccessible-site-possible-with-a-perfect-lighthouse-score/"
+							>podem ser construídos de uma forma</a
+						>
+						que os testes automáticos passem, mesmo que o site esteja totalmente
+						inacessível.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade é apenas para utilizadores cegos</h2>
+					<p>
+						Para utilizadores cegos, utilizadores surdos, utilizadores daltónicos,
+						para utilizadores com deficiência motora e mental, para utilizadores idosos,
+						para todos os utilizadores.
+						<strong>Essencial para alguns, útil para todos</strong>.
+					</p>
+
+					<a
+						href="https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+						target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre Acessibilidade é apenas para utilizadores cegos</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade é opcional</h2>
+					<p>
+						Até a sua empresa ser processada. Aprenda sobre os casos da
+						<a
+							href="https://www.nad.org/2011/06/16/nad-files-disability-civil-rights-lawsuit-against-netflix/"
+							target="_blank"
+							>Netflix</a
+						>
+						e
+						<a
+							href="https://www.cnbc.com/2019/10/07/dominos-supreme-court.html"
+							target="_blank"
+							>Domino</a
+						>
+						para entender que o preço por não ser acessível pode ser muito alto.
+						Existem
+						<a href="https://www.w3.org/WAI/policies/" target="_blank">muitas leis</a>
+						que podem exigir que um site seja acessível.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade é apenas sobre a prevenção de processos judiciais</h2>
+
+					<p>
+						A acessibilidade é sobre os seus utilizadores. Obviamente que prevenir
+						ações judiciais é importante para qualquer empresa, mas a <strong>satisfação
+						do utilizador</strong> e a <strong>reputação da empresa</strong> também agregam muito valor.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade é apenas seguir as WCAG</h2>
+
+					<p>
+						Normalmente começa com as
+						<a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">WCAG</a>,
+						mas na vida real um site complacente pode ainda não estar totalmente acessível.
+						Acessibilidade significa entender a necessidade de todos os utilizadores,
+						bem como empatia e consciência.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade pode ser alcançada adicionando apenas atributos ARIA
+					</h2>
+
+					<p>
+						Obviamente,
+						<a href="https://www.w3.org/WAI/standards-guidelines/aria/" target="_blank"
+							>ARIA</a
+						>
+						é uma parte importante da acessibilidade, mas a regra de ouro do ARIA é
+						<a href="https://w3c.github.io/using-aria/#rule1" target="_blank"
+							>"Não uses ARIA"</a
+						>. Muitos atributos ARIA podem não ser necessários se as tags
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML#good_semantics"
+							target="_blank"
+							>semânticas de HTML</a
+						>
+						forem usadas.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">Não precisamos ser complacentes</h2>
+
+					<p>
+						Talvez precisem. Existem várias leis e regulamentos que podem exigir que
+						um site siga os princípios de acessibilidade. Definitivamente vale a pena
+						verificá-los.
+					</p>
+
+					<a href="https://www.w3.org/WAI/policies/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden">sobre Não precisamos ser complacentes</span></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						Somente especialistas em acessibilidade podem implementar correções de acessibilidade
+					</h2>
+
+					<p>
+						Felizmente, não. Qualquer um com algumas habilidades de acessibilidade pode
+						implementar e testar sites para acessibilidade. Na verdade, não é apenas fácil
+						de aprender, mas às vezes é um processo bastante divertido. Não requer qualquer
+						experiência específica para executar as
+						<a href="https://www.w3.org/WAI/test-evaluate/preliminary/" target="_blank"
+							>verificações fáceis</a
+						>.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade é como um recurso - implementa-se uma vez e já está
+					</h2>
+					<p>
+						Não. Manutenção diária, novos colegas que não têm habilidades adequadas de
+						acessibilidade, novos requisitos - tudo isso pode quebrar uma acessibilidade.
+						A acessibilidade é uma <strong>coisa contínua</strong> e deve ser considerada
+						em cada etapa do desenvolvimento.
+					</p>
+
+					<a
+						href="https://ethanmarcotte.com/wrote/accessibility-is-not-a-feature/"
+						target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre Accessibility is like a feature - you do it once and then you
+							have it</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">
+						A acessibilidade pode ser corrigida fornecendo uma versão separada do site para pessoas com deficiência
+					</h2>
+
+					<p>
+						Antigamente essa era a suposição errada. Desde então, muitas equipas de
+						desenvolvimento <strong>aprenderam da maneira mais difícil</strong> que
+						manter várias versões do site e todo o conteúdo atualizado <strong>custa
+						muito mais</strong> do que criar um único site totalmente acessível.
+					</p>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">Pessoas com deficiência não usam a web</h2>
+
+					<p>
+						Isto é errado. Na verdade, em alguns casos, a Internet é a <strong>
+						única maneira</strong> das pessoas com deficiência se comunicarem com
+						o mundo. Além disso, quando as "pessoas sem deficiência" usam seus
+						sentimentos naturais, como a visão e a audição,
+						<strong>as pessoas com deficiência devem confiar nas tecnologias</strong>.
+					</p>
+
+					<a href="https://www.w3.org/WAI/people-use-web/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre Pessoas com deficiência não usam a web</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">Cegos não assistem a filmes</h2>
+
+					<p>
+						Eles definitivamente assistem. Com a ajuda de <strong>
+						descrições de áudio</strong>, eles podem assistir e ouvir
+						qualquer conteúdo de mídia como todas as outras pessoas.
+					</p>
+
+					<a href="https://www.w3.org/WAI/media/av/description/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre Cegos não assistem a filmes</span
+						></a
+					>
+				</section>
+
+				<section class="myth">
+					<h2 class="myth__title">A acessibilidade só pode ser testada por pessoas com deficiência</h2>
+
+					<p>
+						Bem, geralmente as pessoas com deficiência são os melhores testadores - eles usam
+						tecnologias assistivas a todo o momento. No entanto,
+						<strong>todos podem aprender</strong> como testar a acessibilidade de sites.
+					</p>
+
+					<a href="https://www.w3.org/WAI/test-evaluate/" target="_blank"
+						>Mais detalhes
+						<span class="visually-hidden"
+							>sobre A acessibilidade só pode ser testada por pessoas com deficiência</span
+						></a
+					>
+				</section>
+
+				<p>Mostra este site ao seu manager.</p>
+			</div>
+		</main>
+
+		<footer>
+			<div class="content">
+				<p>
+					© 2021
+					<a target="_blank" href="https://www.sergeikriger.com/">Sergei Kriger</a>. Todos
+					os direitos reservados.
+				</p>
+				<p>
+					Construído com as
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Hand">Mãos</a>. Hospedado
+					em <a target="_blank" href="https://www.netlify.com/">Netlify</a>. O código
+					fonte está no
+					<a target="_blank" href="https://github.com/sergeicodes/a11ymyths">GitHub</a>.
+					Segue
+					<a target="_blank" href="https://twitter.com/_sergeikriger">@_sergeikriger</a>.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
