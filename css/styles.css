@@ -29,6 +29,7 @@ h1 {
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
+  word-break: break-word;
 }
 
 @media only screen and (min-width: 600px) {
