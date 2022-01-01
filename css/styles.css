@@ -157,25 +157,9 @@ footer ul:lang('he') {
   width: 100%;
   list-style: none;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .nav__list-item {
-  display: flex;
-}
-
-.nav__list-item:not(:last-child) {
-  margin-right: 0.5rem;
-}
-
-.nav__link:hover,
-.nav__link:focus,
-.nav__link:visited {
-  opacity: 0.8;
-  background: none;
-}
-
-.nav__image {
-  display: block;
-  width: 32px;
-  height: 32px;
+  margin: 0.25rem;
 }
