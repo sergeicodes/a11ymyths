@@ -25,7 +25,7 @@
     <meta name="twitter:image:alt" content="Mitos de Acessibilidade Desmascarados" />
     <style>
       :lang(pt) .myth__title::before {
-        content: "Mito #" counter(myth) "";
+        content: "Mito #" counter(myth);
       }
     </style>
   </head>
@@ -61,7 +61,7 @@
           </ul>
         </nav>
 
-        <h1>mitos de a11y</h1>
+        <h1>Mitos de Acessibilidade</h1>
         <p class="stamp">Desmascarados</p>
 
         <section class="myth">
@@ -109,7 +109,7 @@
 
           <p>
             Não vai funcionar. Talvez coisas fáceis, como texto alternativo ou rotulagem de formulário, possam ser
-            adicionados no final, mas alguns
+            adicionadas no final, mas alguns
             <strong>designs de UX complexos devem ser planeados para serem acessíveis</strong>. Em alguns casos, tornar
             os recursos acessíveis no final do processo de desenvolvimento pode exigir uma reestruturação completa.
           </p>
@@ -128,11 +128,11 @@
         </section>
 
         <section class="myth">
-          <h2 class="myth__title">A acessibilidade na web é apenas um trabalho do desenvolvedor</h2>
+          <h2 class="myth__title">A acessibilidade na web é responsabilidade do desenvolvedor</h2>
           <p>
             É um esforço de equipa. Os <strong>designers</strong> criam interfaces de utilizador (UIs) acessíveis, os
             <strong>desenvolvedores </strong> criam-nas, os
-            <strong>engenheiros de controlo de qualidade (QAs) </strong> fazem os testes de acessibilidade, os
+            <strong>engenheiros de controlo de qualidade (QA) </strong> fazem os testes de acessibilidade, os
             <strong>gestores de projeto (PMs)</strong> certificam-se de que a acessibilidade está incluída nos processos
             da equipa, a <strong>equipa jurídica</strong> verifica se um produto está livre de riscos do ponto de vista
             da acessibilidade, os <strong>gestores de conteúdo</strong> ajustam o conteúdo para estar em conformidade.
@@ -165,13 +165,13 @@
 
         <section class="myth">
           <h2 class="myth__title">
-            A acessibilidade pode ser corrigida pelo verificador automático ou sobreposição (accessibility overlays)
+            A acessibilidade pode ser corrigida pela sobreposição de acessibilidade (accessibility overlay)
           </h2>
 
           <p>
-            Absolutamente que não. Há uma
+            Definitivamente não. Há uma
             <a target="_blank" href="https://overlayfactsheet.com/">iniciativa</a>
-            assinada por centenas de profissionais que defende a remoção da "accessibility overlay" na web.
+            assinada por centenas de profissionais que defende a remoção da "accessibility overlay" da web.
           </p>
         </section>
 
@@ -197,8 +197,10 @@
         <section class="myth">
           <h2 class="myth__title">A acessibilidade é apenas para utilizadores cegos</h2>
           <p>
-            Para utilizadores cegos, utilizadores surdos, utilizadores daltónicos, para utilizadores com deficiência
-            motora e mental, para utilizadores idosos, para todos os utilizadores.
+            Certamente, a acessibilidade afeta a experiência de utilizadores cegos, mas afeta também utilizadores com
+            outras deficiências visuais, como daltonismo. E, claro, também beneficia pessoas com outras formas de
+            deficiência, relacionadas com a audição, mobilidade, fala ou cognição. Resulta também com utilizadores
+            idosos. Resumindo, para todos os utilizadores.
             <strong>Essencial para alguns, útil para todos</strong>.
           </p>
 
@@ -293,9 +295,9 @@
         <section class="myth">
           <h2 class="myth__title">A acessibilidade é como um recurso - implementa-se uma vez e já está</h2>
           <p>
-            Não. Manutenção diária, novos colegas que não têm habilidades adequadas de acessibilidade, novos requisitos
-            - tudo isso pode quebrar uma acessibilidade. A acessibilidade é uma <strong>coisa contínua</strong> e deve
-            ser considerada em cada etapa do desenvolvimento.
+            A acessibilidade é uma prática, não um recurso. Significa que devemos tê-la em consideração regularmente,
+            tanto ao implementar novas funcionalidades quanto ao fazer manutenção. O conhecimento sobre acessibilidade
+            deve ser repassado quando entra um novo elemento na equipa, ou quando o requisito muda.
           </p>
 
           <a href="https://ethanmarcotte.com/wrote/accessibility-is-not-a-feature/" target="_blank"
