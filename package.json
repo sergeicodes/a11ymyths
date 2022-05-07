@@ -1,0 +1,22 @@
+{
+  "name": "a11ymyths",
+  "version": "1.0.0",
+  "description": "A small project debunking common accessibility myths.",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "scripts": {
+    "start": "npx http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeicodes/a11ymyths.git"
+  },
+  "author": "Sergei Kriger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeicodes/a11ymyths/issues"
+  },
+  "homepage": "https://github.com/sergeicodes/a11ymyths#readme"
+}
