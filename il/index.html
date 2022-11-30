@@ -42,6 +42,10 @@
       .myth__title::before {
         content: "מיתוס #" counter(myth);
       }
+
+      [dir="ltr"] * {
+        direction: ltr;
+      }
     </style>
   </head>
   <body>
@@ -386,6 +390,14 @@
         </section>
 
         <p>הראה את האתר הזה למנהל שלך</p>
+
+        <div class="donation-container" dir="ltr">
+          <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+          <script type="text/javascript">
+            kofiwidget2.init("Say thanks!", "#F14C4C", "B0B77IR22");
+            kofiwidget2.draw();
+          </script>
+        </div>
       </div>
     </main>
 
