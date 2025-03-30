@@ -2,12 +2,12 @@
   "name": "a11ymyths",
   "version": "1.0.0",
   "description": "A small project debunking common accessibility myths.",
-  "dependencies": {},
   "devDependencies": {
-    "http-server": "^14.1.0"
+    "@11ty/eleventy": "^3.0.0"
   },
   "scripts": {
-    "start": "npx http-server"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",

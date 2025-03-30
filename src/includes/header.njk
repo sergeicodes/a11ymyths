@@ -1,0 +1,15 @@
+<header>
+  <div class="content">
+    <nav class="nav">
+      <ul class="nav__list">
+        {%- for page in collections.page | sort -%}
+          <li class="nav__list-item">
+            <a class="nav__link" lang="{{ page.data.lang.code }}" href={% if page.data.lang.code === 'en' %} '/' {% else %} '{{ page.data.lang.code }}/' {% endif %}>
+              {{ page.data.lang.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</header>

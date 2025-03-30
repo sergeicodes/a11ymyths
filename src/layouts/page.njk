@@ -1,0 +1,50 @@
+---
+url: https://a11ymyths.com
+---
+
+<!DOCTYPE html>
+<html lang="{{ lang.code }}" dir={% if lang.code == "he" or lang.code == "ar" %} "rtl" {% else %} "ltr" {% endif %}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <meta name="description" content="{{ description }}" />
+    <meta name="image" content="{{ url }}/" />
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="{{ url }}/images/og-image-{{ lang.code }}.png" />
+    <meta property="og:image:alt" content="{{ title }} {{ stamp }}" />
+    <meta property="og:url" content="{{ url }}/" />
+  </head>
+  <body>
+    {% include "header.njk" %}
+
+    <main>
+      <div class="content">
+        <h1>{{ title }}</h1>
+
+        <p class="stamp">{{ stamp }}</p>
+
+        {{ content | safe }}
+
+        <p>{{ phrase }}</p>
+
+        <div class="donation-container">{% include "ko-fi.njk" %}</div>
+      </div>
+    </main>
+
+    
+    {% include "footer-" + lang.code + ".njk" %}
+  </body>
+</html>
