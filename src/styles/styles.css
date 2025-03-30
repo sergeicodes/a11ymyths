@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+:root {
+  --color-background: #1e1e1e;
+  --color-text: #cccccc;
+  --color-text-dimmed: #858585;
+  --color-accent: #f14c4c;
+  --color-link: #29b8db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  text-align: center;
+  margin: 0;
+
+  counter-reset: myth;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  word-break: break-word;
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+}
+
+a,
+a:visited {
+  padding: 0 0.1rem;
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-background);
+  background-color: var(--color-link);
+  text-decoration: none;
+  outline: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.stamp {
+  text-transform: uppercase;
+  color: var(--color-accent);
+  border: 3px solid;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  transform: rotate(-16deg);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 1rem;
+}
+
+.myth {
+  margin: 8rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .myth {
+    margin: 12rem 0;
+  }
+}
+
+.myth h2 {
+  font-size: 1.8rem;
+  position: relative;
+  margin-top: 3.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .myth h2 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+  }
+}
+
+.myth h2::before {
+  counter-increment: myth;
+  content: "Myth #" counter(myth) "";
+  position: absolute;
+  top: -2.8rem;
+  font-size: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--color-text-dimmed);
+}
+
+@media only screen and (min-width: 600px) {
+  .myth h2::before {
+    top: -3rem;
+  }
+}
+
+footer {
+  padding: 2rem 0;
+  font-size: 0.8rem;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav__list-item {
+  margin: 0.25rem;
+}
+
+.donation-container {
+  margin-top: 3rem;
+}

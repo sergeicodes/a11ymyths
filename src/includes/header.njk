@@ -1,0 +1,55 @@
+<header>
+  <div class="content">
+    <nav class="nav">
+      <ul class="nav__list">
+        {%- for page in collections.page -%}
+          <li class="nav__list-item">
+            <a class="nav__link" lang="{{ page.data.lang.code }}" href={% if page.data.lang.code === 'en' %} '/' {% else %} '{{ page.data.lang.code }}/' {% endif %}>
+              {{ page.data.lang.title }}
+            </a>
+          </li>
+        {%- endfor -%}
+
+        {# <li class="nav__list-item">
+          <a class="nav__link" lang="ar" href="/ar/">العربية</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="de" href="/de/">Deutsch</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="es" href="/es/">Español</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="fr" href="/fr/">Français</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="id" href="/id/">Bahasa Indonesia</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="he" href="/il/">עברית</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="it" href="/it/">Italiano</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="ja" href="/jp/">日本語</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="ru" href="/ru/">Русский</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="pt-br" href="/pt-br/">Português (Brasil)</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="pt" href="/pt/">Português (Portugal)</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="uk" href="/uk/">Українська</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="nav__link" lang="zh" href="/zh/">繁體中文</a>
+        </li> #}
+      </ul>
+    </nav>
+  </div>
+</header>
