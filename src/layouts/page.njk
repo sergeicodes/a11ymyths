@@ -28,9 +28,11 @@ url: https://a11ymyths.com
     <meta property="og:url" content="{{ url }}/" />
   </head>
   <body>
+    {% include "skip-link.njk" %}
+
     {% include "header.njk" %}
 
-    <main>
+    <main tabindex="-1">
       <div class="content">
         <h1>{{ title }}</h1>
 
@@ -39,8 +41,6 @@ url: https://a11ymyths.com
         {{ content | safe }}
 
         <p>{{ phrase }}</p>
-
-        <div class="donation-container">{% include "ko-fi.njk" %}</div>
       </div>
     </main>
 
