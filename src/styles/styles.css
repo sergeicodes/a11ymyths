@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
 :root {
   --color-background: #1e1e1e;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   line-height: 1.6;
   background-color: var(--color-background);
@@ -100,7 +100,7 @@ strong {
 
 .myth h2::before {
   counter-increment: myth;
-  content: "Myth #" counter(myth) "";
+  content: 'Myth #' counter(myth) '';
   position: absolute;
   top: -2.8rem;
   font-size: 1.3rem;
@@ -143,4 +143,18 @@ footer {
 
 .nav__list-item {
   margin: 0.25rem;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100vh;
+  left: 1rem;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 1rem;
 }
