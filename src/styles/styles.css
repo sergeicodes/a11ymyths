@@ -8,6 +8,34 @@
   --color-link: #29b8db;
 }
 
+/* System light-mode preference (no-JS fallback) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #ffffff;
+    --color-text: #1e1e1e;
+    --color-text-dimmed: #6e6e6e;
+    --color-accent: #c53030;
+    --color-link: #0066aa;
+  }
+}
+
+/* Explicit theme overrides (set via JS) */
+[data-theme="dark"] {
+  --color-background: #1e1e1e;
+  --color-text: #cccccc;
+  --color-text-dimmed: #858585;
+  --color-accent: #f14c4c;
+  --color-link: #29b8db;
+}
+
+[data-theme="light"] {
+  --color-background: #ffffff;
+  --color-text: #1e1e1e;
+  --color-text-dimmed: #6e6e6e;
+  --color-accent: #c53030;
+  --color-link: #0066aa;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -157,4 +185,47 @@ footer {
 .skip-link:focus,
 .skip-link:focus-visible {
   top: 1rem;
+}
+
+.theme-picker {
+  position: fixed;
+  top: 1rem;
+  inset-inline-end: 1rem;
+  z-index: 100;
+}
+
+.theme-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--color-background);
+  border: 2px solid var(--color-text-dimmed);
+  border-radius: 0.5rem;
+  color: var(--color-text);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  padding: 0.35rem 1.8rem 0.35rem 0.6rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23858585' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+}
+
+[dir='rtl'] .theme-select {
+  background-position: left 0.5rem center;
+  padding: 0.35rem 0.6rem 0.35rem 1.8rem;
+}
+
+.theme-select:hover {
+  border-color: var(--color-text);
+}
+
+.theme-select:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+.theme-select option {
+  background: var(--color-background);
+  color: var(--color-text);
 }
